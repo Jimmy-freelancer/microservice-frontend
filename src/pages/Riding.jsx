@@ -117,7 +117,7 @@ const Riding = () => {
             console.log(ride?.captain.captain.paymentId);
             // Step 2: Open Razorpay Checkout
             const options = {
-                key: import.meta.env.RAZORPAY_KEY_ID,
+                key: import.meta.env.VITE_RAZORPAY_KEY_ID,
                 amount: ride?.fare * 100,
                 currency: "INR",
                 name: "GoCab",
